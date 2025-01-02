@@ -40,7 +40,7 @@ func main() {
 		        "Parameters": {
 		          "commands": [
 		            "sudo su - minecraft -c 'sudo systemctl stop minecraft'",
-		            "curl -o /opt/minecraft/server/server.jar {{ MinecraftJarUrl }}",
+		            "sudo su - minecraft -c 'curl -o /opt/minecraft/server/server.jar {{ MinecraftJarUrl }}'",
 		            "sudo su - minecraft -c 'sudo systemctl start minecraft'"
 		          ]
 		        }
